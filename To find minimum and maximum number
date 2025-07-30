@@ -1,0 +1,42 @@
+//Harshil Nagori
+//24070123046
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    const int MAX_ARRAY_SIZE = 100;
+    int numbers[MAX_ARRAY_SIZE];
+    int n;
+
+    cout << "Enter the number of elements (1 to " << MAX_ARRAY_SIZE << "): ";
+    cin >> n;
+
+    if (n <= 0 || n > MAX_ARRAY_SIZE) {
+        cout << "Invalid number of elements." << endl;
+        return 1;
+    }
+
+    cout << "Enter " << n << " integers:" << endl;
+    for (int i = 0; i < n; ++i) {
+        cout << "Enter element " << i + 1 << ": ";
+        cin >> numbers[i];
+    }
+
+    int minVal = numbers[0];
+    int maxVal = numbers[0];
+
+    for (int i = 1; i < n; ++i) {
+        if (numbers[i] < minVal) {
+            minVal = numbers[i];
+        }
+        if (numbers[i] > maxVal) {
+            maxVal = numbers[i];
+        }
+    }
+
+    cout << "Minimum value: " << minVal << endl;
+    cout << "Maximum value: " << maxVal << endl;
+
+    return 0;
+}

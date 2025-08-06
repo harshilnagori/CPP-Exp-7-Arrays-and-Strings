@@ -1,56 +1,15 @@
-//Harshil Nagori
-//24070123046
 #include <iostream>
 #include <string>
-#include <cstring>
-
 using namespace std;
 
 int main() {
-    cout << "--- C-style Strings (char arrays) ---" << endl;
-
-    char name1[] = "Harshil";
-    cout << "My first name: " << name1 << endl;
-
-    char greeting[10] = "Namaste";
-    cout << "A greeting: " << greeting << endl;
-
-    char word[] = {'B', 'h', 'a', 'r', 'a', 't', '\0'};
-    cout << "Another word: " << word << endl;
-
-    char city[20];
-    strcpy(city, "Mumbai");
-    cout << "My favorite city: " << city << endl;
-
-    cout << endl;
-
-    cout << "--- string (Modern C++) ---" << endl;
-
-    string emptyString;
-    cout << "An empty string (nothing printed after this colon):" << emptyString << endl;
-
-    string message = "Learning C++ in India is fun!";
-    cout << "A message: " << message << endl;
-
-    string subject("Strings are essential!");
-    cout << "Another thought: " << subject << endl;
-
-    string copiedMessage = message;
-    cout << "Copied message: " << copiedMessage << endl;
-
-    string anotherCopy(subject);
-    cout << "Another copy: " << anotherCopy << endl;
-
-    string stars(5, '*');
-    cout << "Some stars: " << stars << endl;
-
-    string firstName = "Priya";
-    string lastName = "Sharma";
-    string fullName = firstName + " " + lastName;
-    cout << "Full name: " << fullName << endl;
-
-    cout << endl;
-    cout << "string seems much more flexible and easier to use!" << endl;
-
+    char str1[4]="C++";
+    char str2[]={'C','+','+','\0'};
+    char str3[4]={'C','+','+','\0'};
+    string str4="C++";
+    cout<<str1<<endl;
+    cout<<str2<<endl;
+    cout<<str3<<endl;
+    cout<<str4<<endl;
     return 0;
 }

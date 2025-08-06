@@ -8,6 +8,6 @@ int main() {
     string str1 = "Harshil";
     string str2 = "Nagori";
     string result = str1 + str2;
-    cout << result << std::endl;
+    cout << result << endl;
     return 0;
 }

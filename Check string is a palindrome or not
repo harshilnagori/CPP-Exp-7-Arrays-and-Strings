@@ -1,0 +1,29 @@
+//Harshil Nagori
+//24070123046
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    cin >> str;
+
+    int len = str.length();
+    bool isPalindrome = true;
+
+    for (int i = 0; i < len / 2; i++) {
+        if (str[i] != str[len - 1 - i]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    if (isPalindrome)
+        cout << "It's a palindrome." << endl;
+    else
+        cout << "Not a palindrome." << endl;
+
+    return 0;
+}

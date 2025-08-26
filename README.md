@@ -165,7 +165,7 @@ SAMPLE OUTPUT :
                     Not a palindrome.
 
                     
-============================================================================
+
  Conclusion:
 - A pointer is a variable that stores the memory address of another variable.
 - Pointers allow accessing and manipulating data indirectly using addresses.
@@ -173,6 +173,5 @@ SAMPLE OUTPUT :
 - Pointers can point to other pointers, enabling multiple levels of indirection.
 - They are powerful tools for dynamic memory allocation and data structures.
 - Mastery of pointers is essential for efficient and advanced C++ programming.
-============================================================================
-*/
+
 
